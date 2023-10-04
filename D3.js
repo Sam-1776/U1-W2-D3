@@ -156,7 +156,6 @@ console.log(eyeColor);
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  const element = starWarsCharacters[i].eye_color;
   switch (true) {
     case starWarsCharacters[i].eye_color === "blue":
       eyeColor.blue[i] = starWarsCharacters[i];
@@ -210,17 +209,16 @@ if (crewMass > 1000) {
   console.log("Warning: Load is over 700");
 } else if (crewMass < 500) {
   console.log("Ship is under loaded");
-} else if(crewMass > 500){
+} else if (crewMass > 500) {
   console.log("Ship is half loaded");
 }
-console.log(crewMass);
 
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  if(starWarsCharacters[i].gender === "n/a")
-  starWarsCharacters[i].gender = "robot";
+  if (starWarsCharacters[i].gender === "n/a")
+    starWarsCharacters[i].gender = "robot";
 }
 console.log(starWarsCharacters);
 
@@ -228,10 +226,10 @@ console.log(starWarsCharacters);
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
-let index = 0
+let index = 0;
 for (let i = 0; i < characters.length; i++) {
   if (femaleCharacters[index].name === characters[i].name) {
-    characters.splice(i,1);
+    characters.splice(i, 1);
     index = 1;
   }
 }
